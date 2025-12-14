@@ -468,6 +468,7 @@ a:hover {
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-md);
+    border-left: 4px solid var(--color-primary);
 }
 
 .contact-info h3 {
@@ -512,15 +513,22 @@ a:hover {
     border: 0;
 }
 
-/* Service items (like contact-info) */
-.service-item {
+/* Service sections (like pricing-item) */
+.service-section {
     background-color: var(--color-bg);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-md);
-    color: var(--color-text-light);
-    font-size: 1.0625rem;
-    line-height: 1.7;
+    border-left: 4px solid var(--color-primary);
+}
+
+.service-section h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.service-section ul li::before {
+    color: var(--color-primary);
 }
 
 /* Footer */
