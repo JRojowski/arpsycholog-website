@@ -438,6 +438,10 @@ a:hover {
     font-weight: bold;
 }
 
+.service-section ul li::before {
+    color: var(--color-text);
+}
+
 .content-section p {
     font-size: 1.0625rem;
     line-height: 1.8;
@@ -449,7 +453,7 @@ a:hover {
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-md);
-    border-left: 4px solid var(--color-text);
+    border-left: 4px solid var(--color-text-light);
 }
 
 .pricing-item h3 {
@@ -470,7 +474,7 @@ a:hover {
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-md);
-    border-left: 4px solid var(--color-text);
+    border-left: 4px solid var(--color-text-light);
 }
 
 .contact-info h3 {
@@ -484,6 +488,8 @@ a:hover {
     align-items: flex-start;
     margin-bottom: var(--spacing-md);
     gap: var(--spacing-sm);
+    font-size: 1.0625rem;
+    line-height: 1.7;
 }
 
 .contact-item:last-child {
@@ -493,11 +499,22 @@ a:hover {
 .contact-item strong {
     min-width: 120px;
     color: var(--color-text);
+    font-size: 1.0625rem;
+}
+
+.contact-item span,
+.contact-item a {
+    font-size: 1.0625rem;
 }
 
 .contact-item a {
-    color: var(--color-primary);
+    color: var(--color-text-light);
     word-break: break-all;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: var(--color-text);
 }
 
 /* Google Maps */
@@ -522,7 +539,7 @@ a:hover {
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-md);
-    border-left: 4px solid var(--color-text);
+    border-left: 4px solid var(--color-text-light);
 }
 
 .service-section h2 {
