@@ -512,12 +512,15 @@ a:hover {
     border: 0;
 }
 
-/* Invitation text */
-.invitation-text {
-    margin-top: 2rem;
-    text-align: center;
-    font-style: italic;
-    color: var(--color-primary);
+/* Service items (like contact-info) */
+.service-item {
+    background-color: var(--color-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-light);
+    font-size: 1.0625rem;
+    line-height: 1.7;
 }
 
 /* Footer */
