@@ -59,7 +59,7 @@ h1 {
 h2 {
     font-size: 1.875rem;
     font-weight: 500;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: calc(var(--spacing-sm) / 2);
 }
 
 h3 {
