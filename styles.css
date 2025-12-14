@@ -101,7 +101,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--spacing-sm);
+    gap: 1rem;
 }
 
 .logo {
@@ -116,9 +116,9 @@ a:hover {
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;
     width: auto;
-    max-width: 180px;
+    max-width: 240px;
     display: block;
     object-fit: contain;
 }
@@ -358,17 +358,20 @@ a:hover {
 
 .about-layout {
     display: flex;
+    flex-direction: row;
     gap: var(--spacing-lg);
     align-items: flex-start;
     margin-top: var(--spacing-md);
 }
 
 .about-image {
-    flex: 0 0 300px;
+    flex: 0 0 320px;
+    min-width: 0;
 }
 
 .about-content {
     flex: 1;
+    min-width: 0;
 }
 
 .content-section .profile-image {
@@ -510,8 +513,8 @@ a:hover {
     }
 
     .logo img {
-        height: 35px;
-        max-width: 150px;
+        height: 40px;
+        max-width: 160px;
     }
 
     .about-layout {
