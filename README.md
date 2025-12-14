@@ -133,12 +133,48 @@ Aby zmienić kolory, edytuj wartości hex (np. `#6B8E9F` na `#8B9DC3`).
 - **Dostępność:** Strona spełnia podstawowe wymagania dostępności (a11y)
 - **Szybkość:** Brak zewnętrznych zależności, szybkie ładowanie
 
+## Aktualizacja strony po zmianach
+
+### Automatyczna aktualizacja
+
+GitHub Pages automatycznie odświeża stronę po każdym pushu do repozytorium. Proces wygląda następująco:
+
+1. **Wprowadź zmiany lokalnie** i zapisz pliki
+2. **Wykonaj commit i push:**
+   ```bash
+   git add .
+   git commit -m "Opis zmian"
+   git push
+   ```
+3. **Poczekaj 1-5 minut** - GitHub Pages potrzebuje czasu na przetworzenie zmian
+4. **Odśwież stronę w przeglądarce** (możesz użyć Ctrl+F5 lub Cmd+Shift+R aby wymusić odświeżenie cache)
+
+### Sprawdzanie statusu wdrożenia
+
+1. Przejdź do swojego repozytorium na GitHub
+2. Kliknij zakładkę **"Actions"** (jeśli widzisz)
+3. Sprawdź czy wdrożenie zakończyło się sukcesem (zielony znaczek ✓)
+
+### Rozwiązywanie problemów
+
+**Strona nie odświeża się po kilku minutach:**
+- Sprawdź czy wszystkie zmiany zostały wypushowane: `git status`
+- Upewnij się, że GitHub Pages jest włączone w Settings → Pages
+- Wyczyść cache przeglądarki (Ctrl+Shift+Delete lub Cmd+Shift+Delete)
+- Spróbuj otworzyć stronę w trybie incognito/prywatnym
+
+**Zmiany nie są widoczne:**
+- Sprawdź czy pliki są w odpowiednich folderach (np. `img/` dla obrazów)
+- Upewnij się, że ścieżki do plików są poprawne (względne, np. `img/logo.png`)
+- Sprawdź konsolę przeglądarki (F12) czy nie ma błędów 404
+
 ## Wsparcie
 
 W razie problemów z edycją lub wdrażaniem:
 1. Sprawdź, czy wszystkie pliki są w repozytorium
 2. Upewnij się, że GitHub Pages jest włączone w ustawieniach
 3. Poczekaj kilka minut po wprowadzeniu zmian (GitHub Pages potrzebuje czasu na aktualizację)
+4. Sprawdź logi w zakładce "Actions" w repozytorium
 
 ## Licencja
 
