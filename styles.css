@@ -434,12 +434,13 @@ a:hover {
     content: '•';
     position: absolute;
     left: 0;
-    color: var(--color-text);
+    color: var(--color-text-light);
     font-weight: bold;
 }
 
 .service-section ul li::before {
     color: var(--color-text);
+    font-weight: bold;
 }
 
 .content-section p {
@@ -511,10 +512,12 @@ a:hover {
     color: var(--color-text-light);
     word-break: break-all;
     text-decoration: none;
+    transition: var(--transition);
 }
 
 .contact-item a:hover {
     color: var(--color-text);
+    text-decoration: underline;
 }
 
 /* Google Maps */
@@ -551,10 +554,6 @@ a:hover {
 .service-section p {
     font-size: 1.0625rem;
     line-height: 1.7;
-}
-
-.service-section ul li::before {
-    color: var(--color-primary);
 }
 
 /* Footer */
