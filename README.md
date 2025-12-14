@@ -176,6 +176,177 @@ W razie problemów z edycją lub wdrażaniem:
 3. Poczekaj kilka minut po wprowadzeniu zmian (GitHub Pages potrzebuje czasu na aktualizację)
 4. Sprawdź logi w zakładce "Actions" w repozytorium
 
+## Pozycjonowanie w wyszukiwarkach (SEO)
+
+Tak, możliwe jest pozycjonowanie statycznej strony na GitHub Pages w Google i innych wyszukiwarkach. Oto praktyczne sposoby:
+
+### 1. Meta tagi SEO (już zaimplementowane)
+
+Strona już ma podstawowe meta tagi w każdym pliku HTML:
+- `<meta name="description">` - opis strony
+- `<meta name="keywords">` - słowa kluczowe
+- `<title>` - tytuł strony
+
+**Możesz je edytować** w każdym pliku HTML, aby były bardziej specyficzne i zawierały lokalne słowa kluczowe (np. "psycholog Lublin", "psychoterapia Lublin").
+
+### 2. Dodaj structured data (Schema.org)
+
+Stwórz plik `schema.json` w głównym katalogu:
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+  "description": "Konsultacje psychologiczne i psychoterapia indywidualna dla młodzieży i osób dorosłych w Lublinie",
+  "url": "https://TWOJA-DOMENA.github.io/repo",
+  "telephone": "+48603758800",
+  "email": "arpsycholog@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Kaprysowa 1",
+    "addressLocality": "Lublin",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "51.2636499",
+    "longitude": "22.5466094"
+  },
+  "priceRange": "100 zł",
+  "areaServed": {
+    "@type": "City",
+    "name": "Lublin"
+  }
+}
+```
+
+Następnie dodaj do każdego pliku HTML w sekcji `<head>`:
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+  ...
+}
+</script>
+```
+
+### 3. Utwórz sitemap.xml
+
+Stwórz plik `sitemap.xml` w głównym katalogu:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://TWOJA-DOMENA.github.io/repo/</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://TWOJA-DOMENA.github.io/repo/o-mnie.html</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://TWOJA-DOMENA.github.io/repo/zakres-pomocy.html</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://TWOJA-DOMENA.github.io/repo/cennik.html</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://TWOJA-DOMENA.github.io/repo/kontakt.html</loc>
+    <lastmod>2024-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
+```
+
+**Ważne:** Zamień `TWOJA-DOMENA.github.io/repo` na rzeczywisty adres Twojej strony.
+
+### 4. Utwórz robots.txt
+
+Stwórz plik `robots.txt` w głównym katalogu:
+
+```
+User-agent: *
+Allow: /
+
+Sitemap: https://TWOJA-DOMENA.github.io/repo/sitemap.xml
+```
+
+### 5. Dodaj Open Graph tags (dla social media)
+
+Dodaj do każdego pliku HTML w sekcji `<head>` (po istniejących meta tagach):
+
+```html
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://TWOJA-DOMENA.github.io/repo/">
+<meta property="og:title" content="Gabinet Psychologiczny - Agnieszka Rojowska">
+<meta property="og:description" content="Konsultacje psychologiczne i psychoterapia indywidualna dla młodzieży i osób dorosłych w Lublinie">
+<meta property="og:image" content="https://TWOJA-DOMENA.github.io/repo/img/logo-small.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://TWOJA-DOMENA.github.io/repo/">
+<meta property="twitter:title" content="Gabinet Psychologiczny - Agnieszka Rojowska">
+<meta property="twitter:description" content="Konsultacje psychologiczne i psychoterapia indywidualna dla młodzieży i osób dorosłych w Lublinie">
+<meta property="twitter:image" content="https://TWOJA-DOMENA.github.io/repo/img/logo-small.png">
+```
+
+### 6. Zarejestruj stronę w Google Search Console
+
+1. Przejdź na [Google Search Console](https://search.google.com/search-console)
+2. Dodaj swoją właściwość (adres strony)
+3. Zweryfikuj własność (możesz użyć pliku HTML lub meta tagu)
+4. Prześlij sitemap.xml
+
+### 7. Optymalizacja treści
+
+- **Używaj lokalnych słów kluczowych:** "psycholog Lublin", "psychoterapia Lublin", "gabinet psychologiczny Lublin"
+- **Dodaj więcej treści:** Rozszerz opisy na stronach, dodaj więcej szczegółów o usługach
+- **Regularnie aktualizuj treść:** Google preferuje strony z regularnie aktualizowaną treścią
+
+### 8. Linki wewnętrzne
+
+Upewnij się, że wszystkie strony są połączone linkami (już zaimplementowane w menu).
+
+### 9. Optymalizacja obrazów
+
+- Używaj opisowych nazw plików: `agnieszka-rojowska-psycholog.jpg` zamiast `ar_foto.jpg`
+- Dodaj alt teksty do wszystkich obrazów (już zaimplementowane)
+
+### 10. Szybkość ładowania
+
+Strona jest już zoptymalizowana (brak zewnętrznych bibliotek, małe obrazy), ale możesz:
+- Użyć WebP format dla obrazów
+- Dodać lazy loading dla obrazów (już częściowo zaimplementowane)
+
+### Przydatne narzędzia
+
+- [Google PageSpeed Insights](https://pagespeed.web.dev/) - sprawdź szybkość strony
+- [Google Rich Results Test](https://search.google.com/test/rich-results) - sprawdź structured data
+- [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) - sprawdź responsywność
+
+### Ważne wskazówki
+
+1. **Cierpliwość:** Pozycjonowanie zajmuje czas (zwykle 3-6 miesięcy)
+2. **Lokalne SEO:** Skup się na lokalnych frazach ("psycholog Lublin")
+3. **Jakość treści:** Pisz naturalnie, dla ludzi, nie tylko dla robotów
+4. **Linki zewnętrzne:** Poproś inne strony (np. lokalne portale) o link do Twojej strony
+
 ## Licencja
 
 © Agnieszka Rojowska. Wszelkie prawa zastrzeżone.
