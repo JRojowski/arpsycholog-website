@@ -439,7 +439,7 @@ a:hover {
 }
 
 .service-section ul li::before {
-    color: var(--color-text);
+    color: var(--color-text-light);
     font-weight: bold;
 }
 
@@ -506,6 +506,7 @@ a:hover {
 .contact-item span,
 .contact-item a {
     font-size: 1.0625rem;
+    color: var(--color-text-light);
 }
 
 .contact-item a {
@@ -517,7 +518,6 @@ a:hover {
 
 .contact-item a:hover {
     color: var(--color-text);
-    text-decoration: underline;
 }
 
 /* Google Maps */
