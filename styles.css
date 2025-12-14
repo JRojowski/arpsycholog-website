@@ -374,6 +374,10 @@ a:hover {
     min-width: 0;
 }
 
+.about-content p {
+    text-align: justify;
+}
+
 .content-section .profile-image {
     margin-bottom: 0;
 }
