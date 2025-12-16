@@ -1,0 +1,345 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://arpsycholog.pl/#person",
+      "name": "Agnieszka Rojowska",
+      "jobTitle": "Psycholog, Psychoterapeuta",
+      "description": "Psycholog i psychoterapeuta w Lublinie. Absolwentka UMCS, certyfikowany specjalista PARPA. Prowadzi konsultacje psychologiczne oraz psychoterapię indywidualną dla młodzieży i osób dorosłych.",
+      "url": "https://arpsycholog.pl",
+      "telephone": "+48603758800",
+      "email": "arpsycholog@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Kaprysowa 1",
+        "addressLocality": "Lublin",
+        "postalCode": "20-000",
+        "addressCountry": "PL"
+      },
+      "sameAs": [
+        "https://www.znanylekarz.pl/agnieszka-rojowska/psycholog-psychoterapeuta/lublin"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Uniwersytet Marii Curie-Skłodowskiej (UMCS)",
+        "department": "Wydział Psychologii"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certyfikowany specjalista PARPA"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "4-letnia szkoła Podstawy Psychoterapii Psychodynamicznej"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Kurs Intensywny program Gestalt"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Terapia Skoncentrowana na Rozwiązaniach – I Stopień"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Studium Przeciwdziałania Przemocy w Rodzinie"
+        }
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://arpsycholog.pl/#business",
+      "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+      "description": "Gabinet psychologiczny w Lublinie oferujący konsultacje psychologiczne i psychoterapię indywidualną dla młodzieży i osób dorosłych. Profesjonalna pomoc w zakresie kryzysów emocjonalnych, stresu, lęku, depresji i rozwoju osobistego.",
+      "url": "https://arpsycholog.pl",
+      "telephone": "+48603758800",
+      "email": "arpsycholog@gmail.com",
+      "priceRange": "150-170 PLN",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Kaprysowa 1",
+        "addressLocality": "Lublin",
+        "postalCode": "20-000",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.2636499",
+        "longitude": "22.5466094"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Lublin"
+      },
+      "founder": {
+        "@id": "https://arpsycholog.pl/#person"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Usługi psychologiczne",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Konsultacja psychologiczna",
+            "itemListElement": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Konsultacja psychologiczna",
+                "description": "Konsultacja psychologiczna trwająca 50 minut",
+                "provider": {
+                  "@id": "https://arpsycholog.pl/#business"
+                },
+                "serviceType": "Konsultacja psychologiczna",
+                "duration": "PT50M"
+              },
+              "price": "160",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Psychoterapia indywidualna",
+            "itemListElement": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Psychoterapia indywidualna",
+                "description": "Psychoterapia indywidualna dla osób dorosłych trwająca 50 minut",
+                "provider": {
+                  "@id": "https://arpsycholog.pl/#business"
+                },
+                "serviceType": "Psychoterapia indywidualna",
+                "duration": "PT50M"
+              },
+              "price": "160",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Psychoterapia młodzieży",
+            "itemListElement": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Psychoterapia młodzieży",
+                "description": "Psychoterapia indywidualna dla młodzieży trwająca 50 minut",
+                "provider": {
+                  "@id": "https://arpsycholog.pl/#business"
+                },
+                "serviceType": "Psychoterapia młodzieży",
+                "duration": "PT50M"
+              },
+              "price": "160",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Psychoterapia par i małżeństw",
+            "itemListElement": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Psychoterapia par i małżeństw",
+                "description": "Psychoterapia par i małżeństw trwająca 50 minut",
+                "provider": {
+                  "@id": "https://arpsycholog.pl/#business"
+                },
+                "serviceType": "Psychoterapia par i małżeństw",
+                "duration": "PT50M"
+              },
+              "price": "170",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Psychoterapia partnerska",
+            "itemListElement": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Psychoterapia partnerska",
+                "description": "Psychoterapia partnerska trwająca 50 minut",
+                "provider": {
+                  "@id": "https://arpsycholog.pl/#business"
+                },
+                "serviceType": "Psychoterapia partnerska",
+                "duration": "PT50M"
+              },
+              "price": "170",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Konsultacja online",
+            "itemListElement": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Konsultacja online",
+                "description": "Konsultacja psychologiczna online trwająca 50 minut",
+                "provider": {
+                  "@id": "https://arpsycholog.pl/#business"
+                },
+                "serviceType": "Konsultacja online",
+                "duration": "PT50M"
+              },
+              "price": "150",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://arpsycholog.pl/#localbusiness",
+      "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+      "image": "https://arpsycholog.pl/img/ar_logo.png",
+      "telephone": "+48603758800",
+      "email": "arpsycholog@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Kaprysowa 1",
+        "addressLocality": "Lublin",
+        "postalCode": "20-000",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.2636499",
+        "longitude": "22.5466094"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "priceRange": "150-170 PLN",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "25",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pacjent"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Pani Agnieszka jest osobą bardzo cierpliwą empatyczną. Pomogła mi w zrozumieniu moich problemów, cierpliwie wyjaśniała skąd pochodzą i co można zmienić, a jednocześnie nigdy niczego nie narzucała. Podczas sesji czułam że jestem słuchana z uwagą. Pani Agnieszka była zawsze świetnie przygotowana, punktualna i uważna."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pacjent"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Pani Agnieszka przez półtora roku naszych wizyt pomogła mi bardzo, przede wszystkim w bardziej świadomym odczuwaniu emocji i w akceptacji siebie(z czym miałam problem od dziecka). Zawsze zadawała mi bardzo trafne pytania i dawała rady, które powtarzalam sobie w trudnych momentach. Jest przewspaniałą psycholog, ciepłą, zaangażowaną osobą, na której zawsze mogłam polegać. Z całego serca polecam :))"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pacjent"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Pani Agnieszka jest bardzo miłą i zaangażowaną psychoterapeutką. Potrafi wszystko świetnie wyjaśnić i pomóc. Dzięki jej podejściu w gabinecie można poczuć się w pełni komfortowo. Polecam z całego serca!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pacjent"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Pani mgr bardzo zaangażowana, przemiła, wzbudzająca zaufanie, atmosfera ciepła i przyjazna, polecam z czystym sercem."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pacjent"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Wizyta u Pani Agnieszki bardzo wartościowa. Pełen profesjonalizm ze strony Pani magister, ale także pełne skupienie i chęć pomocy. Pani Agnieszka zadaje trafne pytania i pomaga w zrozumieniu tego co dzieje się w psychice. Polecam zdecydowanie."
+        }
+      ]
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://arpsycholog.pl/#medical",
+      "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+      "medicalSpecialty": [
+        "Psychologia",
+        "Psychoterapia",
+        "Psychoterapia indywidualna",
+        "Psychoterapia młodzieży",
+        "Psychoterapia par"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Kaprysowa 1",
+        "addressLocality": "Lublin",
+        "postalCode": "20-000",
+        "addressCountry": "PL"
+      },
+      "telephone": "+48603758800",
+      "email": "arpsycholog@gmail.com"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description" content="Psycholog Lublin - Agnieszka Rojowska. Gabinet psychologiczny w Lublinie oferujący konsultacje psychologiczne i psychoterapię indywidualną dla młodzieży i osób dorosłych. Umów wizytę: 603 758 800">
     <meta name="keywords" content="psycholog Lublin, psychoterapia Lublin, gabinet psychologiczny Lublin, psycholog Lublin centrum, konsultacje psychologiczne Lublin, psychoterapeuta Lublin, Agnieszka Rojowska">
     <meta name="author" content="Agnieszka Rojowska">
@@ -15,51 +16,157 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arpsycholog.pl/">
-    <meta property="og:title" content="Psycholog Lublin - Gabinet Psychologiczny Agnieszka Rojowska">
+    <meta property="og:title" content="Psycholog Lublin - Gabinet Psychologiczny Agnieszka Rojowska | Psychoterapia">
     <meta property="og:description" content="Psycholog Lublin - konsultacje psychologiczne i psychoterapia indywidualna dla młodzieży i osób dorosłych. Umów wizytę: 603 758 800">
-    <meta property="og:image" content="https://arpsycholog.pl/img/logo-small.png">
+    <meta property="og:image" content="https://arpsycholog.pl/img/ar_logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Gabinet Psychologiczny Agnieszka Rojowska - Psycholog Lublin">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Gabinet Psychologiczny Agnieszka Rojowska">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://arpsycholog.pl/">
-    <meta property="twitter:title" content="Psycholog Lublin - Gabinet Psychologiczny Agnieszka Rojowska">
-    <meta property="twitter:description" content="Psycholog Lublin - konsultacje psychologiczne i psychoterapia indywidualna dla młodzieży i osób dorosłych">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://arpsycholog.pl/">
+    <meta name="twitter:title" content="Psycholog Lublin - Gabinet Psychologiczny Agnieszka Rojowska | Psychoterapia">
+    <meta name="twitter:description" content="Psycholog Lublin - konsultacje psychologiczne i psychoterapia indywidualna dla młodzieży i osób dorosłych. Umów wizytę: 603 758 800">
+    <meta name="twitter:image" content="https://arpsycholog.pl/img/ar_logo.png">
+    <meta name="twitter:image:alt" content="Gabinet Psychologiczny Agnieszka Rojowska - Psycholog Lublin">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Gabinet Psychologiczny Agnieszka Rojowska",
-      "description": "Konsultacje psychologiczne i psychoterapia indywidualna dla młodzieży i osób dorosłych w Lublinie",
-      "url": "https://arpsycholog.pl",
-      "telephone": "+48603758800",
-      "email": "arpsycholog@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "ul. Kaprysowa 1",
-        "addressLocality": "Lublin",
-        "postalCode": "20-000",
-        "addressCountry": "PL"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "51.2636499",
-        "longitude": "22.5466094"
-      },
-      "priceRange": "100 zł",
-      "areaServed": {
-        "@type": "City",
-        "name": "Lublin"
-      },
-      "serviceType": ["Konsultacje psychologiczne", "Psychoterapia indywidualna"],
-      "openingHours": "Mo-Fr 09:00-18:00"
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Agnieszka Rojowska",
+          "jobTitle": "Psycholog, Psychoterapeuta",
+          "description": "Psycholog i psychoterapeuta w Lublinie. Absolwentka UMCS, certyfikowany specjalista PARPA.",
+          "url": "https://arpsycholog.pl",
+          "telephone": "+48603758800",
+          "email": "arpsycholog@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Kaprysowa 1",
+            "addressLocality": "Lublin",
+            "postalCode": "20-000",
+            "addressCountry": "PL"
+          },
+          "sameAs": [
+            "https://www.znanylekarz.pl/agnieszka-rojowska/psycholog-psychoterapeuta/lublin"
+          ],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Uniwersytet Marii Curie-Skłodowskiej (UMCS)",
+            "department": "Wydział Psychologii"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+          "description": "Gabinet psychologiczny w Lublinie oferujący konsultacje psychologiczne i psychoterapię indywidualną dla młodzieży i osób dorosłych.",
+          "url": "https://arpsycholog.pl",
+          "telephone": "+48603758800",
+          "email": "arpsycholog@gmail.com",
+          "priceRange": "150-170 PLN",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Kaprysowa 1",
+            "addressLocality": "Lublin",
+            "postalCode": "20-000",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.2636499",
+            "longitude": "22.5466094"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "areaServed": {
+            "@type": "City",
+            "name": "Lublin"
+          },
+          "serviceType": [
+            "Konsultacje psychologiczne",
+            "Psychoterapia indywidualna",
+            "Psychoterapia młodzieży",
+            "Psychoterapia par i małżeństw",
+            "Psychoterapia partnerska",
+            "Konsultacja online"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+          "image": "https://arpsycholog.pl/img/ar_logo.png",
+          "telephone": "+48603758800",
+          "email": "arpsycholog@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Kaprysowa 1",
+            "addressLocality": "Lublin",
+            "postalCode": "20-000",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.2636499",
+            "longitude": "22.5466094"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "priceRange": "150-170 PLN",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "25",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        {
+          "@type": "MedicalBusiness",
+          "name": "Gabinet Psychologiczny Agnieszka Rojowska",
+          "medicalSpecialty": [
+            "Psychologia",
+            "Psychoterapia",
+            "Psychoterapia indywidualna",
+            "Psychoterapia młodzieży",
+            "Psychoterapia par"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Kaprysowa 1",
+            "addressLocality": "Lublin",
+            "postalCode": "20-000",
+            "addressCountry": "PL"
+          },
+          "telephone": "+48603758800",
+          "email": "arpsycholog@gmail.com"
+        }
+      ]
     }
     </script>
+    <link rel="alternate" type="application/json" href="schema.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://arpsycholog.pl/">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
