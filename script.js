@@ -1,3 +1,19 @@
+// Smooth scroll to reviews section
+function scrollToReviews(event) {
+    event.preventDefault();
+    const reviewsSection = document.getElementById('opinie');
+    if (reviewsSection) {
+        const headerOffset = 80; // Account for sticky header
+        const elementPosition = reviewsSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+
 // Mobile menu toggle
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');

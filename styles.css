@@ -997,6 +997,10 @@ a:hover {
         padding-right: 38px;
     }
 
+    .review-text {
+        text-align: center;
+    }
+
     .contact-item {
         flex-direction: column;
     }
