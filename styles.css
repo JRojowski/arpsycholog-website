@@ -405,14 +405,14 @@ a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--color-text-light);
+    color: var(--color-primary);
     font-size: 16px;
     font-weight: 300;
     cursor: pointer;
     z-index: 10;
     transition: var(--transition);
     background-color: var(--color-white);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-primary);
     padding: 0;
     border-radius: var(--border-radius);
     user-select: none;
@@ -438,7 +438,7 @@ a:hover {
 .reviews-next:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
-    border-color: var(--color-primary);
+    border-color: var(--color-primary-dark);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
@@ -458,7 +458,7 @@ a:hover {
 .review-card {
     flex: 0 0 100%;
     background-color: var(--color-bg);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-lg) calc(var(--spacing-lg) + 0.5rem);
     border-radius: var(--border-radius);
     border-left: 4px solid var(--color-primary);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -482,6 +482,7 @@ a:hover {
     color: var(--color-text-light);
     font-style: italic;
     margin-bottom: var(--spacing-sm);
+    text-align: justify;
 }
 
 .review-author {
@@ -992,8 +993,8 @@ a:hover {
     }
 
     .review-card {
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 33px;
+        padding-right: 33px;
     }
 
     .contact-item {
