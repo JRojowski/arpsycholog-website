@@ -52,7 +52,7 @@
                         <h3>Dane kontaktowe</h3>
                         <div class="contact-item">
                             <strong>Adres:</strong>
-                            <a href="https://share.google/IQf5F9XdTGM45GGW2" target="_blank">ul. Kaprysowa 1, Lublin</a>
+                            <a href="https://www.google.com/maps?q=Kaprysowa+1,+Lublin,+Polska" target="_blank" rel="noopener noreferrer">ul. Kaprysowa 1, Lublin</a>
                         </div>
                         <div class="contact-item">
                             <strong>Telefon:</strong>
@@ -70,7 +70,12 @@
 
                     <div class="contact-info">
                         <h3>Lokalizacja</h3>
-                        <p>Przyjmuję w gabinecie zlokalizowanym przy ul. Kaprysowa 1 (niezależne wejście z lewej strony budynku).</p>   
+                        <p>Przyjmuję w gabinecie zlokalizowanym przy <a href="https://www.google.com/maps?q=Kaprysowa+1,+Lublin,+Polska" target="_blank" rel="noopener noreferrer">ul. Kaprysowa 1</a> (niezależne wejście z lewej strony budynku).</p>
+                        <div class="location-gallery">
+                            <img src="img/gabinet.jpg" alt="Gabinet" class="location-image" onclick="openLightbox(0)">
+                            <img src="img/directions.jpg" alt="Dojazd do gabinetu" class="location-image" onclick="openLightbox(1)">
+                            <img src="img/klatka.jpg" alt="Wejście" class="location-image" onclick="openLightbox(2)">
+                        </div>
                         <div class="map-container">
                             <iframe 
                                 src="https://www.google.com/maps?q=Kaprysowa+1,+Lublin,+Polska&output=embed" 
@@ -95,6 +100,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <button class="lightbox-prev" onclick="changeImage(-1, event)">&#10094;</button>
+        <button class="lightbox-next" onclick="changeImage(1, event)">&#10095;</button>
+        <img class="lightbox-image" id="lightbox-image" src="" alt="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
