@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Strona nie znaleziona - Psycholog Lublin Agnieszka Rojowska</title>
+    <link rel="canonical" href="https://arpsycholog.pl/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+        // Przekierowanie starych URL-i z WordPress na stronę główną
+        (function() {
+            var path = window.location.pathname;
+            var oldPaths = ['/author/', '/wp-admin', '/wp-content/', '/wp-includes/', '/wp-login', '/xmlrpc', '/feed', '/comments/'];
+            for (var i = 0; i < oldPaths.length; i++) {
+                if (path.indexOf(oldPaths[i]) === 0) {
+                    window.location.replace('https://arpsycholog.pl/');
+                    return;
+                }
+            }
+        })();
+    </script>
+    <style>
+        .error-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+        .error-content h1 {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 300;
+        }
+        .error-content h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-text);
+            margin-bottom: var(--spacing-md);
+            font-weight: 400;
+        }
+        .error-content p {
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/img/ar_logo.png" alt="Psycholog Lublin - Gabinet Psychologiczny Agnieszka Rojowska">
+                    </a>
+                </div>
+                <nav class="nav" id="main-nav">
+                    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="/">Strona Główna</a></li>
+                        <li><a href="/o-mnie/">O mnie</a></li>
+                        <li><a href="/zakres-pomocy/">Zakres pomocy</a></li>
+                        <li><a href="/cennik/">Cennik</a></li>
+                        <li><a href="/kontakt/">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="error-page">
+            <div class="error-content">
+                <h1>404</h1>
+                <h2>Strona nie została znaleziona</h2>
+                <p>Przepraszamy, ale strona której szukasz nie istnieje lub została przeniesiona.</p>
+                <a href="/" class="btn btn-primary">Wróć na stronę główną</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Agnieszka Rojowska. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

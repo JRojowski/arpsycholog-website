@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
 
+# Blokowanie starych sciezek WordPress
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+Disallow: /author/
+Disallow: /feed/
+Disallow: /comments/
+Disallow: /?p=
+
 Sitemap: https://arpsycholog.pl/sitemap.xml
